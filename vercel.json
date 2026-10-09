@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "yourtube/package.json", "use": "@vercel/next" },
+    { "src": "server/api/index.js", "use": "@vercel/node", "config": { "maxDuration": 60 } }
+  ],
+  "routes": [
+    { "src": "/uploads(?:/(.*))?", "dest": "/server/api/index.js" },
+    { "src": "/api(?:/(.*))?", "dest": "/server/api/index.js" }
+  ]
+}

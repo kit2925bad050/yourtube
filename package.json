@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "cd yourtube && npm run dev",
+    "build": "cd yourtube && npm run build",
+    "start": "cd yourtube && npm run start",
+    "migrate:videos-firebase": "node --experimental-modules server/scripts/migrateVideosToFirebase.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "cloudinary": "^2.10.0",
+    "dotenv": "^17.4.2",
+    "firebase-admin": "^14.0.0"
+  }
+}

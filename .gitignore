@@ -1,0 +1,33 @@
+# Ignore local environment and deployment secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Node modules
+/node_modules
+/server/node_modules
+yourtube/node_modules
+
+# Generated output
+/.snapshots/
+/yourtube/.next/
+/yourtube/out/
+/yourtube/build
+
+# Vercel
+/yourtube/.vercel
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+temp_replacements.txt
+uploads/
+server/uploads/
